@@ -26,7 +26,7 @@ namespace RPG.Dialogue
             Health health = GetComponent<Health>();
             if (health && health.IsDead()) return false;
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(1))
             {
                 callingController.GetComponent<PlayerConversant>().StartDialogue(this, dialogue);
             }

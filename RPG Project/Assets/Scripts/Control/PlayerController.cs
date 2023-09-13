@@ -122,7 +122,7 @@ namespace RPG.Control
             {
                 if (!GetComponent<Mover>().CanMoveTo(target)) return false;
 
-                if (Input.GetMouseButton(0))
+                if (Input.GetMouseButton(1))
                 {
                     GetComponent<Mover>().StartMoveAction(target, 1f);
                 }

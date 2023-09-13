@@ -234,7 +234,7 @@ namespace RPG.Shops
 
         public bool HandleRaycast(PlayerController callingController)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(1))
             {
                 callingController.GetComponent<Shopper>().SetActiveShop(this);
             }

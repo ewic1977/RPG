@@ -43,10 +43,10 @@ namespace RPG.Abilities.Targeting
                 {
                     targetingPrefabInstance.position = raycastHit.point;
 
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButtonDown(1))
                     {
                         // Absorb the whole mouse click
-                        yield return new WaitWhile(() => Input.GetMouseButton(0));
+                        yield return new WaitWhile(() => Input.GetMouseButton(1));
                         data.SetTargetedPoint(raycastHit.point);
                         data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
                         break;
